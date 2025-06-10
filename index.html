@@ -4,9 +4,153 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body>
+    <header class="w-full bg-blue-500 px-4 py-4">
+      <div class="flex justify-between items-center mb:block container mx-auto">
+        <nav class="flex items-center">
+          <ul class="flex items-center space-x-4">
+            <li>
+              <a href="#" class="hover:text-blue-300 transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-300 transition duration-300"
+                >Grid</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-300 transition duration-300"
+                >Flex</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-300 transition duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-300 transition duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <h1>My Website</h1>
+      </div>
+    </header>
+
+    <main class="h-screen w-full bg-gray-100 flex flex-col items-center">
+      <div class="container mx-auto">
+        <section class="my-4">
+          <div
+            class="w-full h-auto flex items-center justify-start bg-white rounded-lg"
+          >
+            <div class="p-6 space-y-2">
+              <h1 class="text-2xl font-bold">Welcome to Our Website</h1>
+              <p>
+                We provide hight-quality service to meet your needs Our team is
+                dedicated to provideing the best solutins for your business.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="w-full h-auto">
+          <div class="w-full">
+            <h1 class="py-2">Grid Layout</h1>
+          </div>
+          <article class="grid grid-cols-3 space-x-6">
+            <div class="p-4 rounded-lg bg-white">
+              <h1 class="font-bold">Grid item 1</h1>
+              <p>This is a grid item.</p>
+            </div>
+
+            <div class="p-4 rounded-lg space-x-6 bg-white">
+              <h1 class="font-bold">Grid item 2</h1>
+              <p>This is a grid item.</p>
+            </div>
+
+            <div class="p-4 rounded-lg space-x-6 bg-white">
+              <h1 class="font-bold">Grid item 3</h1>
+              <p>This is a grid item.</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="my-6">
+          <div class="w-full">
+            <h1 class="py-2 font-bold">FlexBox Layout</h1>
+          </div>
+          <div class="w-full h-auto flex items-center justify-start rounded-lg">
+            <article
+              class="flex flex-grow items-center justify-between space-x-6"
+            >
+              <div class="p-4 rounded-lg bg-white flex-grow">
+                <h1 class="font-bold">FlexBox Layout</h1>
+                <p>This is a flex item</p>
+              </div>
+              <div class="p-4 rounded-lg bg-white flex-grow">
+                <h1 class="font-bold">FlexBox Layout</h1>
+                <p>This is a flex item</p>
+              </div>
+              <div class="p-4 rounded-lg bg-white flex-grow">
+                <h1 class="font-bold">FlexBox Layout</h1>
+                <p>This is a flex item</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- form -->
+        <section class="w-full m-6 min-h-auto">
+          <div class="w-full flex items-center justify-center">
+            <h1 class="text-2xl font-seimbold">From Element</h1>
+          </div>
+          <div class="bg-white p-6 rounded-lg w-full h-auto">
+            <form>
+              <div class="w-full flex flex-col space-y-2">
+                <label for="name">Name:</label>
+                <input
+                  class="shadow-lg p-4 rounded-lg"
+                  type="text"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+
+              <div class="w-full flex flex-col space-y-2 mt-6">
+                <label for="name">Email:</label>
+                <input
+                  class="shadow-lg p-4 rounded-lg"
+                  type="email"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+
+              <div class="w-full flex flex-col space-y-2 mt-6">
+                <label for="name">message:</label>
+                <input
+                  class="w-full shadow-lg p-4 rounded-lg"
+                  type="text"
+                  placeholder="Enter Your message"
+                />
+              </div>
+
+              <div class="mt-4">
+                <button
+                  type="submit"
+                  class="px-6 py-2 rounded-md text-white cursor-pointer bg-blue-500 hover:bg-blue-300 transition duration-300"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
